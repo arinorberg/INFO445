@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<title>Edit Student</title>
+</head>
+
+<body>
+	<div id="StudentForm" style="margin-top:50px"
+		 class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+		<div class="panel panel-info">
+			<div class="panel-body">
+				<form id="form" class="form-horizontal" role="form" action="/StudentSubmit" method="post">
+					<input id="StudentID" type="hidden" class="form-control" name="StudentID" value="">
+					<div class="form-group">
+						<label for="Fname" class="col-md-3 control-label">First Name</label>
+						<div class="col-md-9">
+							<input id="Fname" type="text" class="form-control" name="Fname"
+								   placeholder="Your first name">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="Lname" class="col-md-3 control-label">Last Name</label>
+						<div class="col-md-9">
+							<input id="Lname" type="text" class="form-control" name="Lname"
+								   placeholder="Your last name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="DOB" class="col-md-3 control-label">Date of Birth</label>
+						<div class="col-md-9">
+							<input id="DOB" type="date" class="form-control"
+								   name="DOB">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-md-offset-1 col-md-12">
+							<button id="btn-StudentsSubmit" type="submit" class="btn btn-info">
+								<i class="icon-hand-right"></i>Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="/js/editStudent.js"></script>
+</body>
+
+</html>
