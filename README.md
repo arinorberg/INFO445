@@ -11,3 +11,5 @@ The app should be running on http://localhost:3000
 
 To stop the server, hit Ctrl+c
 # INFO445
+
+Adapted from Arnav Dubey's provided solution.
