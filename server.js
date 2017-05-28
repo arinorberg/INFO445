@@ -35,16 +35,6 @@ function displayAllStudents() {
   return new sql.Request().query('SELECT TOP 1000 * FROM dbo.STUDENT ORDER BY STUDENTID DESC');
 }
 
-function displayAllTrips() {
-  console.log("displaying top 1000 Trips");
-  return new sql.Request().query('SELECT TOP 1000 * FROM dbo.TRIP ORDER BY TRIPID DESC');
-}
-
-function displayAllPrograms() {
-  console.log("displaying top 1000 Programs");
-  return new sql.Request().query('SELECT TOP 1000 * FROM dbo.PROGRAM ORDER BY ProgramID DESC');
-}
-
 function updateStudent(StudentID, Fname, Lname, DOB) {
   console.log("Updating Student");
   var query = "UPDATE dbo.Student SET Fname='" + Fname + "', Lname='"
